@@ -1,4 +1,4 @@
-import axiosInstance from "../../utils/AxiosConfiguration";
+import axiosInstance from "@/utils/AxiosConfiguration";
 
 const DEFAULT_ROUTER = "genders";
 

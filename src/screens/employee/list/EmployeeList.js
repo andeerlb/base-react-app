@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { getPageablePersonsWithFilter } from '../EmployeeService';
-import Datatable from '../../../components/datatable/Datatable';
+import Datatable from '@/components/datatable/Datatable';
 
-import { useLoader } from '../../../contexts/LoaderContext';
-import HeaderScreen from '../../../components/headerScreen/HeaderScreen';
+import { useLoader } from '@/contexts/LoaderContext';
+import HeaderScreen from '@/components/headerScreen/HeaderScreen';
 
 function Employee ({history, match}) {
   const { showBodyLoader, hideLoader } = useLoader();

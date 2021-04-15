@@ -2,12 +2,12 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowCircleLeft, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons'
 
-import { useSidebar } from '../../contexts/SidebarContext';
+import { useSidebar } from '@/contexts/SidebarContext';
 import { useLocation } from 'react-router-dom';
 
 import styles from "./LeftSidebar.module.css";
 import { Link } from "react-router-dom";
-import { useLoader } from "../../contexts/LoaderContext";
+import { useLoader } from "@/contexts/LoaderContext";
 
 const LeftSidebar = () => {
   const { showLeftSidebar, toggleLeftSidebar, leftSidebarWidth, menus, setActiveMenu } = useSidebar();

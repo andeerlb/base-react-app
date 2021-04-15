@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { faSortAlphaUp as sortUpIcon, faSortAlphaDown as sortDownIcon } from '@fortawesome/free-solid-svg-icons'
-import Button from '../button/Button';
-import Pagination from '../pagination/Pagination';
-import SearchBox from '../searchbox/SearchBox';
+import Button from '@/components/button/Button';
+import Pagination from '@/components/pagination/Pagination';
+import SearchBox from '@/components/searchbox/SearchBox';
 import styles from './Datatable.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Select from '../select/Select';
+import Select from '@/components/select/Select';
 
 const QUANTITY_ROWS = [
   {id:1, name: 10},

@@ -21,7 +21,7 @@ axiosInstance.interceptors.response.use (
   error => {
     if(error.toJSON().message === 'Network Error'){
       toast.error('Não conseguimos estalabecer a conexão com o servidor, por favor, tente novamente mais tarde!');
-      throw Error('teste');
+      return Promise.reject (error);
   }
     return Promise.reject (error);
   }

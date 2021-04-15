@@ -1,5 +1,5 @@
 import React from 'react';
-import { useSidebar } from '../../contexts/SidebarContext';
+import { useSidebar } from '@/contexts/SidebarContext';
 import styles from './Loader.module.css';
 
 function Loader () {

@@ -1,5 +1,5 @@
 import React, { createContext, useState, useContext } from "react";
-import { faUserPlus, faUserTag } from '@fortawesome/free-solid-svg-icons'
+import { faUserTag } from '@fortawesome/free-solid-svg-icons'
 
 const SidebarContext = createContext({});
 

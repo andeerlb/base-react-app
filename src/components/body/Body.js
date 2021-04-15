@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
 import { Redirect, Route, Switch } from 'react-router';
-import * as importScreens from '../../imports/ScreenImport';
+import * as importScreens from '@/imports/ScreenImport';
 
 import { ToastContainer } from 'react-toastify';
 
-import { useSidebar } from '../../contexts/SidebarContext';
-
+import { useSidebar } from '@/contexts/SidebarContext';
+import { useLoader } from '@/contexts/LoaderContext';
+import NotFound404 from '@/screens/404/NotFound404';
+import Loader from '@/components/loader/Loader';
+import LeftSidebar from '@/components/leftsidebar/LeftSidebar';
+import TopSidebar from '@/components/topsidebar/TopSidebar';
 import styles from './Body.module.css';
-import NotFound404 from '../../screens/404/NotFound404';
-import Loader from '../loader/Loader';
-import { useLoader } from '../../contexts/LoaderContext';
-import LeftSidebar from '../leftsidebar/LeftSidebar';
-import TopSidebar from '../topsidebar/TopSidebar';
 
 const Body = () => {
   const { menus, leftSidebarWidth } = useSidebar();

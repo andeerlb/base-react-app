@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLongArrowAltLeft as backIcon } from '@fortawesome/free-solid-svg-icons'
 
 import styles from './HeaderScreen.module.css';
-import Button from '../button/Button';
+import Button from '@/components/button/Button';
 
 function HeaderScreen ({ title, onClickBack, onClickRightBtn, onClickRightBtnText }) {
   const { t, i18n  } = useTranslation();
