@@ -2,17 +2,17 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useLoader } from '@/contexts/LoaderContext';
-import { getAllList as genderList } from '@/screens/gender/GenderService';
-import { findById, save, deleteById } from '../EmployeeService';
+import { getAllList as genderList } from '@/views/gender/GenderService';
+import { findById, save, deleteById } from '@/api/EmployeeAPI';
 
 import Button from '@/components/button/Button';
 import HeaderScreen from '@/components/headerScreen/HeaderScreen';
 import Input from '@/components/input/Input';
 import { toast } from 'react-toastify';
 import Select from '@/components/select/Select';
-import styles from './EmployeeRegister.module.css';
+import styles from './EmployeeAdd.module.css';
 
-function EmployeeRegister({ match, history }){
+function EmployeeAdd({ match, history }){
   const { t, i18n  } = useTranslation();
 
   const [person, setPerson] = useState(null);
@@ -139,4 +139,4 @@ function EmployeeRegister({ match, history }){
   )
 }
 
-export default EmployeeRegister;
+export default EmployeeAdd;

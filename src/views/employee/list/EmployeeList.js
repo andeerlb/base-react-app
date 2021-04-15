@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getPageablePersonsWithFilter } from '../EmployeeService';
+import { getPageablePersonsWithFilter } from '@/api/EmployeeAPI';
 import Datatable from '@/components/datatable/Datatable';
 
 import { useLoader } from '@/contexts/LoaderContext';

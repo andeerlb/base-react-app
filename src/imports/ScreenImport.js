@@ -1,4 +1,4 @@
-import EmployeeRouter from '@/screens/employee/EmployeeRouter';
+import EmployeeRouter from '@/views/employee/EmployeeRouter';
 
 export {
   EmployeeRouter,
