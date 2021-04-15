@@ -1,4 +1,4 @@
-import axiosInstance from "@/utils/AxiosConfiguration";
+import axiosInstance from "@/configurations/AxiosConfiguration";
 
 const DEFAULT_ROUTER = "persons";
 
