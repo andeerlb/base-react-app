@@ -1,0 +1,59 @@
+#container {
+  height: 100vh;
+  background: #252f3e;
+  color: #dadde1;
+  cursor: pointer;
+  transition: 0.5s width;
+  position: fixed;
+}
+
+#menuContainer {
+  overflow: hidden;
+}
+
+nav#menuContainer ul li a {
+  color: #dadde1;
+  text-decoration: none;
+}
+
+.menuItem {
+  padding: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.menuItem span {
+  margin-left: 15px;
+  transition: 0.5s opacity;
+}
+
+.menuSelected {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.containerLogo {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(to right, #1b2330 0%, #252f3e 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.toggleMenu {
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.ul {
+  padding: 0px;
+}
+
+.ul li a {
+  box-sizing: content-box;
+}

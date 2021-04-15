@@ -1,0 +1,65 @@
+.label {
+  color: #999;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #fff;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.element {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  background: #fff;
+  margin: 0;
+  text-indent: 0;
+  color: #2a2628;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: auto;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer;
+  height: 40px;
+  padding-right: 50px;
+  width: 100%;
+}
+
+.wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background: #1b2330;
+  pointer-events: none;
+  z-index: 1;
+}
+.wrapper::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg) translateY(-50%);
+  pointer-events: none;
+  top: 40%;
+  right: 18px;
+  z-index: 1;
+}
+
+.disabled .element {
+  pointer-events: none;
+}

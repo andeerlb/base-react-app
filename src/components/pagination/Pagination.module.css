@@ -1,0 +1,73 @@
+.container {
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.pages {
+  border: 1px solid transparent;
+  color: #7d7d7d;
+  background: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: .8em;
+}
+
+.enumeration {
+  border-radius: 100%;
+}
+
+.enumeration div {
+  position: relative;
+  height: 0;
+  padding: 50% 0;
+  display: flex;
+  align-items: center;
+}
+
+.pages.selected {
+  color: #fdfdfd;
+  background: linear-gradient(to right, #1b2330 0%, #252f3e 100%);
+  cursor: not-allowed !important;
+}
+
+.enumeration:hover {
+  background: linear-gradient(to right, #1b2330 0%, #252f3e 100%);
+  color: #fdfdfd;
+}
+
+.next {
+  margin-left: 40px;
+}
+
+.previous {
+  margin-right: 40px;
+}
+
+.next.enumeration:hover, .previous.enumeration:hover {
+  background: rgba(0,0,0,.2);
+  color: #7d7d7d;
+}
+
+button.disabled:disabled,
+button.disabled[disabled]{
+  border: 1px solid #999999;
+  background: #cccccc;
+  color: #666666;
+  cursor: not-allowed !important;
+}
+
+span.dots {
+  margin: 0px 10px;
+  font-weight: bold;
+}

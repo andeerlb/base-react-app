@@ -1,0 +1,5 @@
+.containerBody {
+  transition: .5s margin-left, .5s width;
+  position: absolute;
+  height: calc(100% - 60px);
+}

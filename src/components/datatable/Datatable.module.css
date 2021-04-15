@@ -1,0 +1,93 @@
+#containerDatatable {
+  position: relative;
+}
+
+#containerTable {
+  position: relative;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.containerHeader {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+table.table {
+  width: 100%;
+	border-collapse: separate;
+  border-spacing: 0;
+  border-style: hidden;
+}
+
+tr.trRow {
+  cursor: pointer;
+}
+
+tr.trRow:nth-of-type(odd) {
+	background: #eee;
+}
+
+tr.trRow:hover {
+  background: rgba(41,128,185,0.1);
+}
+
+th.th {
+  position: relative;
+	background: #1b2330;
+	color: #dadde1;
+	font-weight: bold;
+  height: 48px;
+  padding: 0px 10px;
+	border:none;
+	text-align: left;
+}
+
+td.td {
+	padding: 15px 10px;
+	text-align: left;
+}
+
+td.td:last-child {
+  border-right: 1px solid #d8d8d8;
+}
+
+td.td:first-child {
+  border-left: 1px solid #d8d8d8;
+}
+
+.noRecordFound {
+  text-align: center !important;
+}
+
+.sort {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  float:left;
+  display: flex;
+  padding: 0px 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #dadde1;
+}
+
+.sort svg {
+  margin: auto;
+}
+
+.sort:hover {
+  background: rgba(0,0,0,0.1);
+}
+
+.sortSelected {
+  background: rgba(0,0,0,0.5);
+}

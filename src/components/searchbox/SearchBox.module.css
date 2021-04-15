@@ -1,0 +1,46 @@
+#container {
+  width: auto;
+  min-width: 100px;
+  position: relative;
+}
+
+.searchBox {
+  transition: box-shadow 0.6s;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background: #ebebeb;
+  outline: none;
+  box-shadow: none;
+  cursor: text;
+  padding: 0px 30px 0px 10px;
+  width: calc(100% - 40px);
+  font-family: sans-serif;
+}
+.searchBox + label .searchIcon {
+  color: black;
+}
+
+.searchBox:hover,
+.searchBox:focus {
+  box-shadow: 0 0 0 1px #3d4752;
+}
+.searchIcon {
+  position: absolute;
+  color: #3d4752;
+  cursor: pointer;
+  right: 40px;
+  margin-right: 10px;
+  height: 100%;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  padding: 0 10px;
+}
+
+.searchIcon:hover {
+  color: linear-gradient(to right, #1b2330 0%, #252f3e 100%);
+}
